@@ -1,0 +1,67 @@
+
+.multiP{
+    display: flex;
+    flex-direction: column;    
+}
+
+.multiP p{
+    font-size: 16px;
+    line-height: 0px;
+    text-align: center;
+}
+
+#leer{
+    display: none;
+}
+
+span label.--cursor{
+    transition: .3s ease-in-out all;
+}
+
+span label.--cursor:hover{
+    font-size: var(--hover-display-5);
+
+}
+
+.N.dos{
+    min-height: 10em;
+}
+
+.N.after::after{
+    position: absolute;  
+    content: "Active";  
+    font-weight:600;
+    padding: 20px;
+    width: 150px;
+    height: 60px;
+    background: var(--naranja140);
+    border-radius: 70px;
+    top: 4px;
+    right: -110px;
+    opacity: 0%;
+    transition: .3s ease all;
+   
+}
+.N.after.dos::after{
+    position: absolute;  
+    content: "";  
+    width: 300px;
+    height: 43px;
+    background: var(--naranja130);
+    border-radius: 70px;
+    top: 30px;
+    right: -300px;
+    opacity: 100%;
+    transition: .8s ease all;
+   
+}
+.N.after:hover::after{
+    right: -70px;
+    opacity: 80%;
+}
+
+.N.after.dos:hover::after{
+    right: -20px;
+    /* opacity: 80%; */
+}
+

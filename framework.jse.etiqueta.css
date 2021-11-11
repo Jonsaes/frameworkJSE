@@ -1,0 +1,11 @@
+/* 
+    * Etiqueta *    
+*/
+span.etiqueta{
+    position: absolute; 
+    text-align: right; 
+    word-wrap: break-word;
+    overflow: hidden;  
+    transition: .3s ease all;
+    
+}
